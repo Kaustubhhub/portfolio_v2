@@ -1,6 +1,6 @@
 const HeroSection = () => {
     return (
-        <div className="text-center flex flex-col items-center gap-4 mt-8">
+        <div className="text-center flex flex-col items-center gap-4 mt-8 w-[700px]">
             <h1 className="text-4xl font-extrabold text-white drop-shadow-lg tracking-wide">
                 Architecting scalable solutions for modern{" "}
                 <span className="text-yellow-300">web applications</span>
