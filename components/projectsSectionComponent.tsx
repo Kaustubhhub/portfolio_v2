@@ -3,5 +3,4 @@ const ProjectsSectionComponent = () =>{
         hi from project section
     </div>
 }
-
 export default ProjectsSectionComponent
