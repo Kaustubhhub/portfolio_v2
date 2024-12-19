@@ -9,7 +9,7 @@ const HeroSection = () => {
             <p className="text-lg font-medium text-white/90 tracking-wide whitespace-nowrap">
                 Hi, I'm{" "}
                 <span className="text-green-300 font-bold tracking-wide">Kaustubh</span>,
-                A <span className="text-blue-300 font-bold">Next.js developer</span> based in{" "}
+                A <span className="text-blue-300 font-bold">Full stack developer</span> based in{" "}
                 <span className="text-orange-300 font-bold">India</span>.
             </p>
 
