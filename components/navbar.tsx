@@ -22,9 +22,14 @@ const Navbar = () => {
     const handleSkillsClick = () => {
         router.push('/skills')
     }
+
+    const backToRoot = () => {
+        router.push('/')
+    }
+
     return (
         < div className="flex justify-between p-3 px-8" >
-            <div className={`${caveatBrush.className} text-xl text-white`}>
+            <div onClick={backToRoot} className={`cursor-pointer ${caveatBrush.className} text-xl text-white`}>
                 Kaustubh.dev
             </div>
             <div className="flex justify-around gap-4 text-white">
