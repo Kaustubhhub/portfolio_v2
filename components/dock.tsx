@@ -1,6 +1,6 @@
 const Dock = () => {
     return (
-        <div className="flex justify-center items-center absolute top-[400px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[55px] w-[300px] rounded bg-[#2C2C2C]/70 border border-[#FFFFFF]/50 shadow-[0_4px_6px_rgba(0,0,0,0.4)] backdrop-blur-[12px] transition-transform duration-300 hover:scale-110">
+        <div className="flex justify-center items-center absolute top-[450px] md:top-[450px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[55px] w-[250px] md:w-[300px] rounded bg-[#2C2C2C]/70 border border-[#FFFFFF]/50 shadow-[0_4px_6px_rgba(0,0,0,0.4)] backdrop-blur-[12px] transition-transform duration-300 hover:scale-110">
             <div className="w-[200px] flex justify-between items-center">
                 <div className="flex justify-center items-center">
                     <svg className="hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50" style={{ fill: "#FFFFFF" }}>

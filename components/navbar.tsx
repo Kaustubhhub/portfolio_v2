@@ -9,12 +9,12 @@ const caveatBrush = Caveat_Brush({
     weight: '400',
 });
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
     const router = useRouter();
     const pathName = usePathname();
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const menuRef = useRef(null);
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+    const menuRef = useRef<HTMLDivElement | null>(null);
 
     const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
@@ -35,8 +35,8 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
                 setIsMenuOpen(false);
             }
         };
@@ -64,7 +64,7 @@ const Navbar = () => {
                     type="button"
                     className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-menu"
-                    aria-expanded="false"
+                    aria-expanded={isMenuOpen ? 'true' : 'false'}
                     onClick={toggleMenu}
                 >
                     <span className="sr-only">Open main menu</span>
