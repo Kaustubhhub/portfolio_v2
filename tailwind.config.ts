@@ -19,6 +19,7 @@ export default {
         },
       },
       backgroundSize: {
+        'full': '100% 100%',
         '400%': '400% 400%',
       },
       colors: {
