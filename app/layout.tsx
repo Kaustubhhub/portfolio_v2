@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         <div className="flex justify-center items-center pt-20">
           <div className="animate-gradient-shift bg-gradient-to-tr from-red-900 via-gray-800 to-cyan-800 bg-[length:400%_400%] h-[98vh] w-[98vw] absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] rounded-[10px] -z-10"></div>
-          <div className="absolute w-[300px] md:w-[700px] h-[55px] lg:w-[800px] rounded-[100px] bg-white/20 border border-white/40 shadow-[0_4px_6px_rgba(0,0,0,0.1)] backdrop-blur-[10px] z-10 flex items-center justify-between px-4">
+          <div className="absolute w-[300px] md:w-[500px] h-[55px] lg:w-[800px] rounded-[100px] bg-white/20 border border-white/40 shadow-[0_4px_6px_rgba(0,0,0,0.1)] backdrop-blur-[10px] z-10 flex items-center justify-between px-4">
             <Navbar />
           </div>
 
